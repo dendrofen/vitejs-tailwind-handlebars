@@ -1,0 +1,31 @@
+{{> _head title='Demo page: Vitejs Handlebars Tailwind'}}
+<!-- content -->
+<div class="flex flex-col gap-10 bg-blue-50">
+    <div>
+        {{> link/arrow-primary href='/components.html' text='Componenets'}}
+    </div>
+    <div>
+        {{> link/arrow href='#' text='Live demo'}}
+    </div>
+
+    <div class="max-w-sm">
+        {{> text/title text='Heading'}}
+        {{> text/subtitle text='subheading'}}
+        {{> text/text text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nisi, laborum officia
+        odit
+        laudantium placeat error optio, nobis beatae quaerat ad dolorem laboriosam necessitatibus, impedit modi! Commodi
+        architecto eveniet aliquid.'}}
+    </div>
+
+    <div class="relative h-40">
+        {{> nav/default}}
+    </div>
+
+    {{> footer/compact}}
+
+    <div class="relative overflow-hidden">
+        {{> block/showcase}}
+    </div>
+</div>
+<!-- content end -->
+{{> _footer}}
